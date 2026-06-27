@@ -5,15 +5,15 @@ class Solution {
 
         for (char ch : s.toCharArray()) {
 
-            // Push opening brackets
+            
             if (ch == '(' || ch == '{' || ch == '[') {
                 stack.push(ch);
             }
 
-            // Check closing brackets
+            
             else {
 
-                // No opening bracket available
+                
                 if (stack.isEmpty()) {
                     return false;
                 }
